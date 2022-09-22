@@ -1,0 +1,53 @@
+ext {
+    appMinSdkVersion = 24
+    appTargetSdkVersion = 30
+    appCompileSdkVersion = 30
+    navVersion = "2.3.5"
+    dataStoreVersion = "1.0.0-rc01"
+    kotlinVersion = "1.7.0"
+
+    library = [
+            navFragment       : "androidx.navigation:navigation-fragment-ktx:$navVersion",
+            navFragmentKtx    : "androidx.navigation:navigation-ui-ktx:$navVersion",
+            fragmentKtx       : "androidx.fragment:fragment-ktx:1.3.0-rc01",
+            coreKtx           : "androidx.core:core-ktx:1.7.0",
+            appCompat         : "androidx.activity:activity-ktx:1.2.0-rc01",
+            appCompatAndroidX : "androidx.appcompat:appcompat:1.4.1",
+            constraintlayout  : "androidx.constraintlayout:constraintlayout:2.0.4",
+            lifecycleExtension: "androidx.lifecycle:lifecycle-extensions:2.2.0",
+            jUnitTest         : "junit:junit:4.12",
+            viewModelKtx      : "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0",
+            liveDataKtx       : "androidx.lifecycle:lifecycle-livedata-ktx:2.4.1",
+            material          : "com.google.android.material:material:1.5.0",
+            recyclerView      : "androidx.recyclerview:recyclerview:1.2.0-alpha04",
+    ]
+
+    scope = [
+            viewModel: "androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1",
+            lifecycle: "androidx.lifecycle:lifecycle-runtime-ktx:2.2.0"
+    ]
+
+    kotlinLibrary = [
+            stdlib           : "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion",
+            coroutinesCore   : "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.7",
+            coroutinesAndroid: "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.1"
+    ]
+
+    daggerHilt = [
+            main           : "com.google.dagger:hilt-android:2.42",
+            androidCompiler: "com.google.dagger:hilt-android-compiler:2.42",
+            fragment       : 'androidx.hilt:hilt-navigation-fragment:1.0.0'
+    ]
+
+    networking = [
+            retrofit: 'com.squareup.retrofit2:retrofit:2.9.0',
+            gson    : 'com.squareup.retrofit2:converter-gson:2.9.0',
+            okHttp  : 'com.squareup.okhttp3:logging-interceptor:4.8.0'
+    ]
+
+    glide = [
+            glideLib : 'com.github.bumptech.glide:glide:4.11.0',
+            glideAnotProcessor: 'com.github.bumptech.glide:compiler:4.11.0'
+    ]
+
+}
